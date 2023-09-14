@@ -1,0 +1,217 @@
+body {
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    height: 100vh;
+}
+
+hr {
+    margin-top: 0;
+}
+
+a {
+    color: hsl(240, 6%, 50%);
+    text-decoration: none;
+}
+
+/* illustration */
+.illustration {
+    position: relative;
+    overflow: clip;
+    width: 100%;
+    height: 100%;
+}
+
+.background-img {
+    position: absolute;
+    width: 170%;
+    left: -400px;
+    top: -200px;
+}
+
+.online-img {
+    position: absolute;
+    left: -60px;
+    top: 50px;
+}
+
+.box-img {
+    position: absolute;
+    left: -90px;
+    top: 180px;
+}
+.mobile {
+    display: none;
+}
+/* article */
+.card {
+    border-radius: 25px;
+    margin: 5% auto;
+}
+
+.card-body {
+    padding: 3.5rem 6rem 3.5rem 1rem;
+}
+
+.card-title {
+    color: hsl(238, 29%, 16%);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.collapse-title {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* responsive */
+@media (max-width: 1400px) {
+    .box-img {
+        top: 160px;
+        width: 160px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card-body {
+        padding-right: 3.5rem;
+    }
+
+    .background-img {
+        width: 140%;
+        left: -180px;
+        top: -80px;
+    }
+
+    .box-img {
+        left: -70px;
+        top: 150px;
+        width: 130px;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-body {
+        padding-right: 2rem;
+    }
+
+    .background-img {
+        width: 120%;
+        left: -100px;
+        top: -20px;
+    }
+
+    .box-img {
+        left: -50px;
+        top: 140px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        margin: 6rem auto;
+    }
+    .card-body {
+        padding:  3.5rem 2rem;
+    }
+    .card-title {
+        text-align: center;
+        margin-top: 6.5rem;
+    }
+    .illustration, .box-img {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .mobile-img, .mobile-bg {
+        position: absolute;
+        left: 50%;
+        width: 80%;
+    }
+    .mobile-img {
+        transform: translate(-50%, -55%);
+    }
+    .mobile-bg {
+        transform: translate(-50%, 0);
+    }
+}
+@media (max-width: 575px) {
+    .card-title {
+        margin-top: 4rem;
+    }
+}
+@media (max-width: 450px) {
+    .card {
+        max-width: 100%!important;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+
+/* active */
+@keyframes clockwiseRotation {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.rotate {
+    animation-name: clockwiseRotation;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes anticlockwiseRotation {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+.anticlock-rotate {
+    animation-name: anticlockwiseRotation;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.active {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+
+.collapsing {
+    color: hsl(240, 6%, 50%) !important;
+}
+
+.collapse.show {
+    color: hsl(240, 6%, 50%) !important;
+}
+
+.collapse-title>span:hover {
+    color: hsl(14, 88%, 65%) !important;
+}

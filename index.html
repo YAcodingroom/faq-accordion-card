@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <!-- bs css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+
+<body>
+  <main>
+    <div class="card mb-3" style="max-width: 65%;">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <div class="illustration">
+            <img src="./images/bg-pattern-desktop.svg" class="background-img" alt="">
+            <img src="./images/illustration-woman-online-desktop.svg" class="img-fluid online-img" alt="">
+          </div>
+          <img src="./images/illustration-box-desktop.svg" class="box-img" alt="">
+          <div class="mobile">
+            <img src="./images/bg-pattern-mobile.svg" alt="" class="mobile-bg">
+            <img src="./images/illustration-woman-online-mobile.svg" alt="" class="mobile-img">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card-body">
+            <h1 class="card-title">FAQ</h1>
+            <article>
+              <p>
+                <a class="collapse-title d-flex" data-bs-toggle="collapse" href="#collapseQ1"
+                  aria-label="collapse question 1" aria-expanded="false" aria-controls="collapseQ1">
+                  <span>How many team members can I invite?</span>
+                  <img src="./images/icon-arrow-down.svg" alt="">
+                </a>
+              </p>
+              <div class="collapse" id="collapseQ1">
+                <p>
+                  You can invite up to 2 additional users on the Free plan. There is no limit on
+                  team members for the Premium plan.
+                </p>
+              </div>
+            </article>
+            <hr><!-- collapseQ1 -->
+
+            <article>
+              <p>
+                <a class="collapse-title d-flex" data-bs-toggle="collapse" href="#collapseQ2"
+                  aria-label="collapse question 2" aria-expanded="false" aria-controls="#collapseQ2">
+                  <span>What is the maximum file upload size?</span>
+                  <img src="./images/icon-arrow-down.svg" alt="">
+                </a>
+              </p>
+              <div class="collapse" id="collapseQ2">
+                <p>
+                  No more than 2GB. All files in your account must fit your allotted storage space.
+                </p>
+              </div>
+            </article>
+            <hr><!-- collapseQ2 -->
+
+            <article>
+              <p>
+                <a class="collapse-title d-flex" data-bs-toggle="collapse" href="#collapseQ3"
+                  aria-label="collapse question 3" aria-expanded="false" aria-controls="#collapseQ3">
+                  <span>How do I reset my password?</span>
+                  <img src="./images/icon-arrow-down.svg" alt="">
+                </a>
+              </p>
+              <div class="collapse" id="collapseQ3">
+                <p>
+                  Click “Forgot password” from the login page or “Change password” from your profile page.
+                  A reset link will be emailed to you.
+                </p>
+              </div>
+            </article>
+            <hr><!-- collapseQ3 -->
+
+            <article>
+              <p>
+                <a class="collapse-title d-flex" data-bs-toggle="collapse" href="#collapseQ4"
+                  aria-label="collapse question 4" aria-expanded="false" aria-controls="#collapseQ4">
+                  <span>Can I cancel my subscription?</span>
+                  <img src="./images/icon-arrow-down.svg" alt="">
+                </a>
+              </p>
+              <div class="collapse" id="collapseQ4">
+                <p>
+                  Yes! Send us a message and we’ll process your request no questions asked.
+                </p>
+              </div>
+            </article>
+            <hr><!-- collapseQ4 -->
+
+            <article>
+              <p>
+                <a class="collapse-title d-flex" data-bs-toggle="collapse" href="#collapseQ5"
+                  aria-label="collapse question 5" aria-expanded="false" aria-controls="#collapseQ5">
+                  <span>Do you provide additional support?</span>
+                  <img src="./images/icon-arrow-down.svg" alt="">
+                </a>
+              </p>
+              <div class="collapse" id="collapseQ5">
+                <p>
+                  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                </p>
+              </div>
+            </article>
+            <hr><!-- collapseQ5 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">YAL</a>.
+    </div>
+  </footer>
+
+  <!-- bs js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <!-- js -->
+  <script src="./index.js"></script>
+</body>
+
+</html>
