@@ -26,10 +26,10 @@ Users should be able to:
 - Hide/Show the answer to a question when the question is clicked
 
 ### Screenshot
-![Alt text](screenshot/screenshot.png)
+![screenshot](screenshot/screenshot.png)
 
 ### Links
-- Live Site URL: 
+- Live Site URL: https://yacodingroom.github.io/faq-accordion-card/
 
 ## My process
 ### Built with
